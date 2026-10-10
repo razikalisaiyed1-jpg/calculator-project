@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #6b90b4 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background-color: #2f2d36;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 320px;
+}
+
+.display {
+    margin-bottom: 20px;
+    background-color: #1e272e;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 2.5em;
+    text-align: right;
+    border: none;
+    background-color: #1e272e;
+    color: #00d2d3;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 8px;
+    background-color: #1ed6c4;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: #74b9ff;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn.operator {
+    background-color: #a29bfe;
+    color: white;
+}
+
+.btn.operator:hover {
+    background-color: #6c5ce7;
+}
+
+.btn.clear {
+    background-color: #520fe1;
+    grid-column: 1;
+}
+
+.btn.clear:hover {
+    background-color: #e17055;
+}
+
+.btn.delete {
+    background-color: #fdcb6e;
+    color: #2d3436;
+}
+
+.btn.delete:hover {
+    background-color: #f39c12;
+}
+
+.btn.zero {
+    grid-column: span 2;
+}
+
+.btn.equals {
+    background-color: #00b894;
+    grid-column: span 2;
+}
+
+.btn.equals:hover {
+    background-color: #55efc4;
+    color: #2d3436;
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        width: 90%;
+    }
+
+    .btn {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    #display {
+        font-size: 2em;
+        padding: 15px;
+    }
+}
