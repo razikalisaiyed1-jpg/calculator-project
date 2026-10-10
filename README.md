@@ -31,7 +31,7 @@ A simple and user-friendly calculator built using HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-Add your GitHub Pages website link here after enabling GitHub Pages.
+https://calculator-project-bice-two.vercel.app/
 
 ## Author
 
